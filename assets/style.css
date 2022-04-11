@@ -1,0 +1,49 @@
+body {
+
+    background-color: #BF202F;
+
+}
+
+
+* {
+    font-size: 35px;
+    color: whitesmoke;
+    font-family: "Montserrat", sans-serif;
+}
+
+div ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 25px;
+
+}
+
+div ul li{
+    list-style: none;
+    justify-self: start;
+    transition-duration:1s;
+    display: inline;
+    margin: 10px;
+}
+
+.selection {
+    font-size: 20px;
+    color: #BF202F;
+}
+
+.selection option, input {
+    font-size: 20px;
+    color: #BF202F;
+}
+
+::placeholder {
+    color: #BF202F;
+    opacity: 1;
+  }
+
+
+div ul li a:hover{
+    color: #BF202F;
+    background-color: white;
+    border: 3.5px solid;
+}
