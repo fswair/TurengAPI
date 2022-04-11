@@ -3,7 +3,7 @@
 
 # Using
 
-<b> >> mkdir tureng</b>
-<b> >> cd tureng</b>
-<b> >> git clone https://github.com/fswair/TurengAPI.git</b>
-<b> >> uvicorn api:client --reload</b>
+**>> mkdir tureng**
+**>> cd tureng**
+>> git clone https://github.com/fswair/TurengAPI.git
+>> uvicorn api:client --reload
