@@ -1,13 +1,7 @@
-from ctypes import Union
-import logging
-from httpx import stream
 from requests import get
 from bs4 import BeautifulSoup
-from time import time
-from time import sleep
 import re
 from json import dumps
-import json
 
 
 class Tureng(object):
