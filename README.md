@@ -1,5 +1,5 @@
 # TurengAPI
-<i>Basic tureng researcher by Python requests.</i>
+Basic tureng researcher by Python requests.
 
 # Using
 
