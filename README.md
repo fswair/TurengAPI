@@ -1,12 +1,10 @@
 # TurengAPI
 Basic tureng researcher by Python requests.
 
-# Using
+# Usage
 
-**> mkdir tureng**
-<br>
-**> cd tureng**
-<br>
-**> git clone https://github.com/fswair/TurengAPI.git**
-<br>
-**> uvicorn api:client --reload**
+```sh
+> git clone https://github.com/fswair/TurengAPI.git \
+> cd TurengAPI \
+> uvicorn api:client --reload
+```
