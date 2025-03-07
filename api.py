@@ -1,7 +1,11 @@
 from fastapi import FastAPI, HTTPException
+from fastapi.responses import HTMLResponse
 from main import Tureng
 
 app = FastAPI()
+@app.get("/")
+async def home():
+    return HTMLResponse(open("index.html").read())
 @app.get("/search")
 def tureng(query: str, selection: str):
     try:
