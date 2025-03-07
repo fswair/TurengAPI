@@ -1,8 +1,8 @@
 from fastapi import FastAPI, HTTPException
 from main import Tureng
 
-client = FastAPI()
-@client.get("/search")
+app = FastAPI()
+@app.get("/search")
 def tureng(query: str, selection: str):
     try:
         tureng = Tureng(query, selection, 1, 1, 0)
