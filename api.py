@@ -12,9 +12,9 @@ async def home():
 async def favicon():
     return FileResponse("assets/favicon.ico")
 @app.get("/search")
-def tureng(query: str, selection: str):
+def tureng(query: str, selection: str, suggestions: bool = False):
     try:
-        tureng = Tureng(query, selection, 1, 1, 0)
+        tureng = Tureng(query, selection, 1, 1, suggestions)
         print(tureng.get(0))
         if selection.lower() in tureng.types.keys():
             return {"word":{"request_url":tureng.request_url,"results":tureng.informations, "status":200, "related_words":tureng.get_related_words() if tureng.suggest_related_words else "Suggestions inactive..."}}
