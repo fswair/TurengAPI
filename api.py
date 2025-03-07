@@ -1,5 +1,5 @@
 from fastapi import FastAPI, HTTPException
-from fastapi.responses import HTMLResponse
+from fastapi.responses import HTMLResponse, FileResponse
 from main import Tureng
 
 app = FastAPI()
@@ -7,6 +7,10 @@ app = FastAPI()
 async def home():
     styles = open("assets/style.css").read()
     return HTMLResponse(open("index.html").read() + f"<br><style>{styles}</style>")
+
+@app.get("/favicon.ico")
+async def favicon():
+    return FileResponse("assets/favicon.ico")
 @app.get("/search")
 def tureng(query: str, selection: str):
     try:
