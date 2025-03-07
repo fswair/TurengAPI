@@ -6,5 +6,5 @@ Basic tureng researcher by Python requests.
 ```sh
 > git clone https://github.com/fswair/TurengAPI.git \
 > cd TurengAPI \
-> uvicorn api:client --reload
+> uvicorn api:app --reload
 ```
