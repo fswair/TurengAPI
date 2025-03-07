@@ -5,7 +5,8 @@ from main import Tureng
 app = FastAPI()
 @app.get("/")
 async def home():
-    return HTMLResponse(open("index.html").read())
+    styles = open("assets/style.css").read()
+    return HTMLResponse(open("index.html").read() + f"<br><style>{styles}</style>")
 @app.get("/search")
 def tureng(query: str, selection: str):
     try:
